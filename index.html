@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SPA</title>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <script src="js.js" defer></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+       
+    </head>
+    <body>
+        <header id="header">
+            <i class="fas fa-chevron-up fa-3x" id="uparrow" style="display: none; margin-top: 2px; margin-left: 6px;" onclick="scrollhome()"></i>
+            <nav id="navbar">
+                <ul class="nav nav-pills" role="navigation">
+                    <li role="presentation" ><a id="a-Home" href="#header" onclick="ShowPage(this.id)" id="Link-Home">Home</a></li>
+                    <li role="presentation" ><a id="a-About" href="#header" onclick="ShowPage(this.id)" id="Link-About">About</a></li>
+                    <li role="presentation" ><a id="a-Blog" href="#Blog" onclick="ShowPage(this.id)" id="Link-Blog">Blog</a></li>
+                    <li role="presentation" ><a id="a-Contact" href="#Contact" onclick="ShowPage(this.id)" id="Link-Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="fillerspace"></div>
+        <section class="Home" id="Home">
+            <h1 >HOME</h1>
+        </section>
+        <section class="About" id="About">
+            <h1>ABOUT</H1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ratione amet, voluptas culpa perferendis hic ullam cum totam sed nesciunt nostrum a et in expedita tenetur, ad dicta rerum deleniti?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis vel minima ut a quod voluptatem possimus temporibus deleniti illo nihil dolores molestiae similique nostrum, ipsum hic quisquam magni nemo modi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa architecto ab numquam eum sint, similique aspernatur doloribus expedita beatae aliquid praesentium laboriosam recusandae cupiditate quaerat omnis quis minima, porro accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus laborum totam similique quod eligendi esse perspiciatis sunt distinctio officia molestias, veniam delectus corporis, numquam quasi ea, autem corrupti nam sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus exercitationem quo vitae possimus ipsa unde ipsum enim maxime optio ex itaque repellat doloremque, sequi quidem eum distinctio ducimus ipsam soluta! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus optio quasi quam at error molestiae unde doloremque, labore, temporibus eaque repellendus odio aspernatur, rerum ipsum? Harum quidem numquam rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet rerum reprehenderit laudantium at quibusdam, optio quae aut praesentium quas. Totam dolore aliquid facere ratione neque commodi aperiam, magni itaque aut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. In velit voluptatem error aliquid porro amet sunt fugit nisi veniam quas recusandae omnis fuga libero nostrum, vitae incidunt nihil nulla sit.</p>
+        </section>
+        <section class="Blog" id="Blog">
+            <h1>BLOG</H1>
+           
+        </section>
+        <section class="Contact" id="Contact">    
+            <h1>BLOG</H1> 
+            <form class="">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="First Name" aria-describedby="basic-addon1">
+                </div>
+                
+            </form>
+        </section>
+
+    </body>
+</html>

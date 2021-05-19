@@ -1,0 +1,93 @@
+body{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    margin: 0;
+    padding: 0;
+    height: 92vh;
+    display: none;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+
+}
+
+.fillerspace{
+    height: 8vh;
+}
+
+
+
+/* NAV STYLING START */
+
+nav{
+    margin-top: 14px;
+    display: block;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header{
+    height: 8vh;
+    width: 100vw;
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: .5s;
+    position: fixed;
+}
+
+.Home{
+    background-color: blue;
+}
+
+.About{
+    background-color: red;
+    height: 200vh;
+}
+
+.Blog{
+    background-color: green;
+}
+
+.Contact{
+    background-color: black;
+}
+
+a{
+    color: black;
+    font-size: larger; 
+    border-radius: 7px;
+    filter: drop-shadow(black 1px 3px 2px);
+    transition: .4s;
+}
+
+a:visited{
+    color: black;
+}
+
+/* NAV STYLING END */
+
+
+/* FORM STYLING */
+
+
+form{
+    margin: 30px 5vw;
+}
+
+input{
+    width: 100%;
+}
+
+
+
