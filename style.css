@@ -7,12 +7,19 @@ body{
 section{
     margin: 0;
     padding: 0;
-    height: 92vh;
+    min-height: 92vh;
     display: none;
+    background-color: whitesmoke;
+
+}
+
+footer{
+    height: 150px;
+    width: 100vw;
+    background-color: grey;
 }
 
 h1{
-    margin: 0;
     padding: 0;
 
 }
@@ -44,24 +51,10 @@ header{
     overflow: hidden;
     transition: .5s;
     position: fixed;
+    filter: drop-shadow(2px 2px 7px);
+    z-index: 3;
 }
 
-.Home{
-    background-color: blue;
-}
-
-.About{
-    background-color: red;
-    height: 200vh;
-}
-
-.Blog{
-    background-color: green;
-}
-
-.Contact{
-    background-color: black;
-}
 
 a{
     color: black;
@@ -82,12 +75,21 @@ a:visited{
 
 
 form{
-    margin: 30px 5vw;
+    margin: 10vw;
+    width: 80vw;
 }
 
 input{
     width: 100%;
+    display: block;
 }
 
+label{
+    margin-top:10px;
+}
 
+/* FORM STYLE END */
+
+
+/* ABOUT STYLING */
 

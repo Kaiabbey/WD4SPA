@@ -18,10 +18,10 @@
             <i class="fas fa-chevron-up fa-3x" id="uparrow" style="display: none; margin-top: 2px; margin-left: 6px;" onclick="scrollhome()"></i>
             <nav id="navbar">
                 <ul class="nav nav-pills" role="navigation">
-                    <li role="presentation" ><a id="a-Home" href="#header" onclick="ShowPage(this.id)" id="Link-Home">Home</a></li>
-                    <li role="presentation" ><a id="a-About" href="#header" onclick="ShowPage(this.id)" id="Link-About">About</a></li>
-                    <li role="presentation" ><a id="a-Blog" href="#Blog" onclick="ShowPage(this.id)" id="Link-Blog">Blog</a></li>
-                    <li role="presentation" ><a id="a-Contact" href="#Contact" onclick="ShowPage(this.id)" id="Link-Contact">Contact</a></li>
+                    <li role="presentation" ><a id="a-Home" href="#" onclick="ShowPage(this.id)" id="Link-Home">Home</a></li>
+                    <li role="presentation" ><a id="a-About" href="#" onclick="ShowPage(this.id)" id="Link-About">About</a></li>
+                    <li role="presentation" ><a id="a-Blog" href="#" onclick="ShowPage(this.id)" id="Link-Blog">Blog</a></li>
+                    <li role="presentation" ><a id="a-Contact" href="#" onclick="ShowPage(this.id)" id="Link-Contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -32,20 +32,41 @@
         <section class="About" id="About">
             <h1>ABOUT</H1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ratione amet, voluptas culpa perferendis hic ullam cum totam sed nesciunt nostrum a et in expedita tenetur, ad dicta rerum deleniti?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis vel minima ut a quod voluptatem possimus temporibus deleniti illo nihil dolores molestiae similique nostrum, ipsum hic quisquam magni nemo modi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa architecto ab numquam eum sint, similique aspernatur doloribus expedita beatae aliquid praesentium laboriosam recusandae cupiditate quaerat omnis quis minima, porro accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus laborum totam similique quod eligendi esse perspiciatis sunt distinctio officia molestias, veniam delectus corporis, numquam quasi ea, autem corrupti nam sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus exercitationem quo vitae possimus ipsa unde ipsum enim maxime optio ex itaque repellat doloremque, sequi quidem eum distinctio ducimus ipsam soluta! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus optio quasi quam at error molestiae unde doloremque, labore, temporibus eaque repellendus odio aspernatur, rerum ipsum? Harum quidem numquam rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet rerum reprehenderit laudantium at quibusdam, optio quae aut praesentium quas. Totam dolore aliquid facere ratione neque commodi aperiam, magni itaque aut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. In velit voluptatem error aliquid porro amet sunt fugit nisi veniam quas recusandae omnis fuga libero nostrum, vitae incidunt nihil nulla sit.</p>
+            <img src="./img/Capture.PNG" alt="imagehere" class="img-thumbnail">   
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod debitis sit minus odio quae maiores excepturi? Necessitatibus debitis nam ut, assumenda voluptates consequuntur soluta blanditiis voluptatum repellat mollitia architecto quae.</p>
         </section>
         <section class="Blog" id="Blog">
             <h1>BLOG</H1>
            
         </section>
         <section class="Contact" id="Contact">    
-            <h1>BLOG</H1> 
-            <form class="">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="First Name" aria-describedby="basic-addon1">
+            <h1>Contact</H1>
+            <form>
+                <label>First Name</label>
+                <div class="input-group input-group-lg"> 
+                    <input type="text" class="form-control" placeholder="First Name">
+                    <div class="input-group-addon"><i class="fas fa-user"></i></div>
                 </div>
-                
+                <label>Last Name</label>
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                    <div class="input-group-addon"><i class="fas fa-user"></i></div>
+                </div>
+                <label for="exampleInputEmail1">Email address</label>
+                <div class="input-group input-group-lg"> 
+                    <input type="email" class="form-control" id="EmailInput" placeholder="Email">
+                    <div class="input-group-addon">@</div>
+                </div>
+                <label for="exampleInputEmail1">Phone Number</label>
+                <div class="input-group input-group-lg"> 
+                    <input type="email" class="form-control" id="EmailInput" placeholder="Email">
+                    <div class="input-group-addon"><i class="fas fa-phone"></i></div>
+                </div>
+                <div class="input-group" style="margin-top: 20px;"> 
+                    <input type="submit" class="btn btn-info" id="EmailInput">
+                </div>
             </form>
         </section>
-
+        <footer></footer>
     </body>
 </html>
