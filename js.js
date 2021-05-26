@@ -1,5 +1,6 @@
 onstart();
-
+setreveal();
+ScrollReveal().reveal('.svgbox', {reset: true, duration: 2500, origin: 'right', distance:'150%', opacity: null});
 
 
 function ShowPage(field){
@@ -39,11 +40,13 @@ function setactive(target){
 
 function navscroll(scrollpos){
     console.log(scrollpos);
+
     if(scrollpos>100){
         document.getElementById("navbar").style.display = 'none';
         document.getElementById("header").style = 'width:50px; height:50px; margin:5px;';
         document.getElementById("header").style.borderRadius = '100%';
         document.getElementById("uparrow").style.display = 'block';
+
     }
     else{
         document.getElementById("navbar").style.display = '';
@@ -57,7 +60,15 @@ function navscroll(scrollpos){
 
 function scrollhome(){
     window.scrollTo(0,0);
+    setreveal();
 
+}
+
+function setreveal(){
+    ScrollReveal().clean('.capreveal');
+    ScrollReveal().reveal('.capreveal', {reset: true, duration: 1500, origin: 'right', distance:'150%', opacity: null, viewOffset:{bottom:300}});
+    ScrollReveal().clean('.stonkreveal');
+    ScrollReveal().reveal('.stonkreveal', {reset: true, duration: 1500, origin: 'right', distance:'150%', opacity: null, viewOffset:{bottom:180}});
 }
 
 

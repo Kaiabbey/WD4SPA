@@ -8,27 +8,37 @@ section{
     margin: 0;
     padding: 0;
     min-height: 92vh;
+    width: 100vw;
     display: none;
     background-color: whitesmoke;
-
+    overflow: hidden;
 }
 
 footer{
     height: 150px;
     width: 100vw;
     background-color: grey;
+    display: flex;
+    align-items: center;
 }
 
 h1{
-    padding: 0;
+    margin: 25px;
+}
 
+
+.svgbox{
+    margin-left: 10px;
+    
 }
 
 .fillerspace{
-    height: 8vh;
+    height: 65px;
 }
 
-
+img{
+    filter: drop-shadow(3px 3px 3px);
+}
 
 /* NAV STYLING START */
 
@@ -43,7 +53,7 @@ ul{
 }
 
 header{
-    height: 8vh;
+    height: 65px;
     width: 100vw;
     background-color: gainsboro;
     margin: 0;

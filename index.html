@@ -5,8 +5,7 @@
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+        <script src="https://unpkg.com/scrollreveal"></script>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
         <script src="js.js" defer></script>
@@ -14,30 +13,57 @@
        
     </head>
     <body>
-        <header id="header">
-            <i class="fas fa-chevron-up fa-3x" id="uparrow" style="display: none; margin-top: 2px; margin-left: 6px;" onclick="scrollhome()"></i>
+        <header id="header" >
+            <i class="fas fa-chevron-up fa-3x" id="uparrow" style="display: none; margin-top: 2px; margin-left: 6px;" onclick="scrollhome()" ></i>
             <nav id="navbar">
                 <ul class="nav nav-pills" role="navigation">
-                    <li role="presentation" ><a id="a-Home" href="#" onclick="ShowPage(this.id)" id="Link-Home">Home</a></li>
-                    <li role="presentation" ><a id="a-About" href="#" onclick="ShowPage(this.id)" id="Link-About">About</a></li>
-                    <li role="presentation" ><a id="a-Blog" href="#" onclick="ShowPage(this.id)" id="Link-Blog">Blog</a></li>
-                    <li role="presentation" ><a id="a-Contact" href="#" onclick="ShowPage(this.id)" id="Link-Contact">Contact</a></li>
+                    <li role="presentation" ><a id="a-Home" href="#" onclick="ShowPage(this.id);setreveal()"  id="Link-Home">Home</a></li>
+                    <li role="presentation" ><a id="a-About" href="#" onclick="ShowPage(this.id);setreveal()" id="Link-About">About</a></li>
+                    <li role="presentation" ><a id="a-Blog" href="#" onclick="ShowPage(this.id);setreveal()" id="Link-Blog">Blog</a></li>
+                    <li role="presentation" ><a id="a-Contact" href="#" onclick="ShowPage(this.id);setreveal()" id="Link-Contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <div class="fillerspace"></div>
         <section class="Home" id="Home">
-            <h1 >HOME</h1>
+            <h1>HOME</h1>
+            <div class="container">
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, accusantium Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid magni velit voluptate dolorem facere eum harum natus error dolor obcaecati dignissimos eveniet sint debitis, accusamus a? Accusamus, labore optio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione non cum exercitationem esse sunt doloremque libero illo fuga, voluptas maxime, voluptates, natus voluptatibus placeat. Asperiores ut ipsam quae doloribus dolores. voluptatibus! Atque sit dignissimos exercitationem sapiente, eaque est cum omnis. Debitis facere iure in culpa, provident eos molestias vitae perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis corporis eum vel nam doloremque magni, dignissimos dolores nihil ab odit repellat in, quo tempora fugit inventore non nisi quos esse!
+                </p>
+                <h1>what we value:</h1>
+                <ul class="list-group"></ul>
+                    <li class="list-group-item">Hope</li>
+                    <li class="list-group-item">Destiny</li>
+                    <li class="list-group-item">Values</li>
+                    <li class="list-group-item">Dynamics</li>
+                    <li class="list-group-item">Growth</li>
+                </ul>
+                <div class="container" style="margin: 15px 0;">
+                    <img src="./img/stonk.jpg" alt="imagehere" class="rounded stonkreveal"> 
+                </div>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nemo velit beatae corporis aperiam doloremque sed a obcaecati iure accusantium, libero eaque laboriosam sequi quo nulla eligendi. Harum, enim atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis corporis eum vel nam doloremque magni, dignissimos dolores nihil ab odit repellat in, quo tempora fugit inventore non nisi quos esse!
+                </p>
+            </div> 
         </section>
         <section class="About" id="About">
-            <h1>ABOUT</H1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ratione amet, voluptas culpa perferendis hic ullam cum totam sed nesciunt nostrum a et in expedita tenetur, ad dicta rerum deleniti?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis vel minima ut a quod voluptatem possimus temporibus deleniti illo nihil dolores molestiae similique nostrum, ipsum hic quisquam magni nemo modi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa architecto ab numquam eum sint, similique aspernatur doloribus expedita beatae aliquid praesentium laboriosam recusandae cupiditate quaerat omnis quis minima, porro accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus laborum totam similique quod eligendi esse perspiciatis sunt distinctio officia molestias, veniam delectus corporis, numquam quasi ea, autem corrupti nam sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus exercitationem quo vitae possimus ipsa unde ipsum enim maxime optio ex itaque repellat doloremque, sequi quidem eum distinctio ducimus ipsam soluta! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus optio quasi quam at error molestiae unde doloremque, labore, temporibus eaque repellendus odio aspernatur, rerum ipsum? Harum quidem numquam rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet rerum reprehenderit laudantium at quibusdam, optio quae aut praesentium quas. Totam dolore aliquid facere ratione neque commodi aperiam, magni itaque aut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. In velit voluptatem error aliquid porro amet sunt fugit nisi veniam quas recusandae omnis fuga libero nostrum, vitae incidunt nihil nulla sit.</p>
-            <img src="./img/Capture.PNG" alt="imagehere" class="img-thumbnail">   
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod debitis sit minus odio quae maiores excepturi? Necessitatibus debitis nam ut, assumenda voluptates consequuntur soluta blanditiis voluptatum repellat mollitia architecto quae.</p>
+            <div class="container">
+                <h1>ABOUT</H1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ratione amet, voluptas culpa perferendis hic ullam cum totam sed nesciunt nostrum a et in expedita tenetur, ad dicta rerum deleniti?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis vel minima ut a quod voluptatem possimus temporibus deleniti illo nihil dolores molestiae similique nostrum, ipsum hic quisquam magni nemo modi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa architecto ab numquam eum sint, similique aspernatur doloribus expedita beatae aliquid praesentium laboriosam recusandae cupiditate quaerat omnis quis minima, porro accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus laborum totam similique quod eligendi esse perspiciatis sunt distinctio officia molestias, veniam delectus corporis, numquam quasi ea, autem corrupti nam sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus exercitationem quo vitae possimus ipsa unde ipsum enim maxime optio ex itaque repellat doloremque, sequi quidem eum distinctio ducimus ipsam soluta! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus optio quasi quam at error molestiae unde doloremque, labore, temporibus eaque repellendus odio aspernatur, rerum ipsum? Harum quidem numquam rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet rerum reprehenderit laudantium at quibusdam, optio quae aut praesentium quas. Totam dolore aliquid facere ratione neque commodi aperiam, magni itaque aut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. In velit voluptatem error aliquid porro amet sunt fugit nisi veniam quas recusandae omnis fuga libero nostrum, vitae incidunt nihil nulla sit.</p>
+                <img src="./img/Capture.PNG" alt="imagehere" class="img-thumbnail capreveal">   
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod debitis sit minus odio quae maiores excepturi? Necessitatibus debitis nam ut, assumenda voluptates consequuntur soluta blanditiis voluptatum repellat mollitia architecto quae.</p>
+            </div>
         </section>
         <section class="Blog" id="Blog">
-            <h1>BLOG</H1>
-           
+            <div class="container">
+                <h1>Bloggins' Corner</H1>
+                <img src="./img/blog.jpg" alt="imagehere" class="img-thumbnail">
+                <h4>Bloggers Name</h4>
+                <h3>Blog Title</h3> 
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptates Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quaerat blanditiis neque vel tempore magnam ab veniam odio provident impedit inventore sapiente corrupti porro praesentium nesciunt nihil pariatur, doloremque cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium illo, fuga blanditiis suscipit vitae numquam, vel veniam beatae consectetur magni obcaecati nostrum commodi quasi fugit laudantium voluptatibus aut maiores minima? sapiente labore odit ab et, voluptatibus delectus vitae quidem quisquam maiores autem voluptatem dolores ipsa officia laborum fugiat tempore. Laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nulla modi neque, et officiis dolores cumque, ad, eligendi eveniet veniam quasi error incidunt ullam odit! Quibusdam ducimus adipisci eos est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vitae, itaque ipsam cumque quidem magni tenetur. Hic modi asperiores sint libero nesciunt maxime, doloremque dolores eum ipsum reiciendis similique numquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam pariatur rem ut animi est consequatur vitae, magnam dolore cum vel? Vel esse necessitatibus itaque officia delectus, quisquam laboriosam corporis suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quibusdam dolores maiores vero quo vel, sint eius qui quisquam beatae, sit, delectus reprehenderit consequuntur dolore debitis. Dolores debitis eligendi reprehenderit?</p>  
+            </div>    
+
         </section>
         <section class="Contact" id="Contact">    
             <h1>Contact</H1>
@@ -67,6 +93,22 @@
                 </div>
             </form>
         </section>
-        <footer></footer>
+        <footer>
+            <div class='svgbox'>
+                <svg width="147" height="122" xmlns="http://www.w3.org/2000/svg">
+
+                    <g>
+                     <title>Layer 1</title>
+                     <rect id="svg_1" height="122" width="147" y="0" x="0" stroke="#000" fill="#FFAAB8"/>
+                     <ellipse stroke="#000" ry="60.26085" rx="72.15216" id="svg_2" cy="61.56522" cx="72.84784" fill="#84D3DB"/>
+                     <path stroke="#000" id="svg_4" d="m25.46886,61.99898l0,0c0,-25.21294 21.0231,-45.65206 46.9564,-45.65206l0,0c12.45361,0 24.39716,4.80975 33.20318,13.37118c8.80604,8.56143 13.75322,20.1732 13.75322,32.28089l0,0c0,25.21293 -21.0231,45.65206 -46.9564,45.65206l0,0c-25.9333,0 -46.9564,-20.43913 -46.9564,-45.65206zm23.4782,0l0,0c0,12.60647 10.51156,22.82603 23.4782,22.82603c12.96665,0 23.4782,-10.21957 23.4782,-22.82603c0,-12.60647 -10.51155,-22.82603 -23.4782,-22.82603l0,0c-12.96664,0 -23.4782,10.21957 -23.4782,22.82603z" fill="#ffffff"/>
+                    </g>
+                   </svg>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
